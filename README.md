@@ -1,15 +1,15 @@
 - 👋 Hi, I’m @Madhav-Tiwary
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+- 👀 I’m interested in Webdevelopment
+- 🌱 I’m currently learning HTML,CSS,JAVA,JAVASCRIPT,
+- 💞️ I’m looking to collaborate on Webdevelopment Course
+- 📫 How to reach me contact me 8505923175
 
 <h1 align="center">Hi 👋, I'm Madhav Tiwari</h1>
 <h3 align="center">A passionate frontend & backend developer from India</h3
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=madhav-tiwary" alt="madhav-tiwary" /></a> </p>
 
-- 🌱 I’m currently learning **C,C++,Java,Phy,HTML,CSS,JAVASCRIPT ETC.**
+- 🌱 I’m currently learning **C,C++,Java,HTML,CSS,JAVASCRIPT ETC.**
 
 - 💬 Ask me about **C,C++,Java,Phy,HTML,CSS,JAVASCRIPT ETC**
 
