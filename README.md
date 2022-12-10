@@ -1,29 +1,212 @@
-- 👋 Hi, I’m @Madhav-Tiwary
-- 👀 I’m interested in Webdevelopment
-- 🌱 I’m currently learning HTML,CSS,JAVA,JAVASCRIPT,
-- 💞️ I’m looking to collaborate on Webdevelopment Course
-- 📫 How to reach me contact me 8505923175
 
-<h1 align="center">Hi 👋, I'm Madhav Tiwari</h1>
-<h3 align="center">A passionate frontend & backend developer from India</h3
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=madhav-tiwary" alt="madhav-tiwary" /></a> </p>
+--------------------------
+name: README
 
-- 🌱 I’m currently learning **C,C++,Java,HTML,CSS,JAVASCRIPT ETC.**
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 1 * * *" # runs everyday at 1AM
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v2 # checkout the repository content to github runner
 
-- 💬 Ask me about **C,C++,Java,Phy,HTML,CSS,JAVASCRIPT ETC**
+      - name: setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.9" # install the python version needed
 
-- 📫 How to reach me **madhavtiwaria2z@gmail.com**
+      - name: execute py script # run get_age.py to get the latest age data
+        run: python get_age.py
 
-- ⚡ Fun fact **I am Funny & Happy**
+      - name: commit files
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git commit -a --amend -m "updating README.md: sheeeesh, you are getting old 🙂"
+      - name: push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
+          force: true
+ 30  
+.github/workflows/snake.yml
+@@ -0,0 +1,30 @@
+name: Generate snake animation
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://instagram.com/m4madhav" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="m4madhav" height="30" width="40" /></a>
-<a href="https://www.youtube.com/c/m4madhavgamimg" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="m4madhavgamimg" height="30" width="40" /></a>
-</p>
+on:
+  schedule: # execute every 12 hours
+    - cron: "* */12 * * *"
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
+  workflow_dispatch:
 
-<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=madhav-tiwary&show_icons=true&locale=en&layout=compact" alt="madhav-tiwary" /></p>
+  push:
+    branches:
+      - master
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: generate snake.svg
+        uses: Platane/snk/svg-only@v2
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: dist/snake.svg
+
+      - name: push snake.svg to the output branch
+        uses: crazy-max/ghaction-github-pages@v2.6.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+ 141  
+README.md
+@@ -0,0 +1,141 @@
+<a href="https://www.linkedin.com/in/rajput-hemant" target="_blank">
+  <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="50" height="38" alt="linkedin logo"/>
+</a>
+<a href="https://twitter.com/rajput_hemant01" target="_blank">
+  <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/twitter/default.svg" width="50" height="38" alt="twitter logo"/>
+</a>
+<img align="right" src="https://komarev.com/ghpvc/?username=rajput-hemant&label=Profile+Views&style=plastic" alt="rajput-hemant" />
+
+<br>
+
+```zsh
+> neofetch
+```
+
+<img align="left" src="https://telegra.ph/file/475b1b979f9c603fec65f.png" alt="rajput-hemant" width="390"/>
+
+```csharp
+            ~~~ I use Arch btw ~~~
+┌────────────── System Information ──────────────┐
+  Madhav-Tiwary
+  ----------------------
+  OS: Arch Linux x86_64
+  Shell: zsh 5.9
+  Resolution: 1920 x 1080
+  CPU: Intel i5-9300 H @ 4.1 GHz
+  GPU0: Intel UHD Graphics 630
+  GPU1: NVIDIA GeForce GTX 1650 Ti Mobile
+├─────────────── User Information ───────────────┤
+  Uptime: 20 years, 2 months, 6 days
+  Host: GLA University #GLAU
+  Kernel: Computer Science and Engineering #CSE
+  Languages:
+  -----------
+  Programming: Java, Python, Dart, ...
+  Real: Hindi, English & Kiliki
+  Hobbies:
+  ---------
+  Software: Music, Valorant
+  Hardware: Undervolting, Overclocking
+  Contact:
+  ---------
+  Email: madhavtiwaria2z@gmail.com
+  LinkedIn: linkedin.com/in/madhav.tiwari
+ 
+└────────────────────────────────────────────────┘
+```
+
+<br>
+
+<div align="center">
+
+## 💻 Tech Stack:
+
+![][git] ![][github] ![][vscode] ![][arch] <br>
+![][c] ![][c++] ![][dart] ![][java] ![][markdown] ![][python] ![][php] <br>
+![][aws] ![][azure] ![][cloudflare] ![][firebase] ![][gcp] ![][heroku] ![][kubernetes] <br>
+![][flutter] ![][mysql]
+
+## 📊 GitHub Stats:
+
+| _Github Stats_ |  _Streaks_   |
+| :------------: | :----------: |
+|   ![][stats]   | ![][streaks] |
+
+## Top Languages
+
+![][langs]
+
+## Contribution:
+
+![][snake] <br> ![][graph]
+
+![][quote] <br> ![][meme]
+
+</div>
+
+<!----------------------------------{ reference links }--------------------------------->
+
+[stats]: https://github-readme-stats.vercel.app/api?username=rajput-hemant&show_icons=true&theme=dark&hide_border=false&include_all_commits=true&count_private=false
+[langs]: https://github-readme-stats.vercel.app/api/top-langs/?username=rajput-hemant&theme=dark&hide_border=false&include_all_commits=true&count_private=false&layout=compact
+[streaks]: https://github-readme-streak-stats.herokuapp.com/?user=rajput-hemant&theme=dark&hide_border=false#gh-light-mode-only
+[quote]: https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark
+[meme]: https://random-memer.herokuapp.com
+
+<!----------------------------------{ language badges }--------------------------------->
+
+[c]: https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c
+[c++]: https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B
+[dart]: https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart
+[java]: https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java
+[markdown]: https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown
+[python]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
+[php]: https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white
+[heroku]: https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku
+[cloudflare]: https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white
+[gcp]: https://img.shields.io/badge/Google%20Cloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white
+[firebase]: https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase
+[aws]: https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws
+[css]: https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3
+[javascript]: https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E
+[html]: https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5
+[php]: https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php
+[shell]: https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash
+[typescript]: https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript
+[azure]: https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=azure-devops
+[flutter]: https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter
+[docker]: https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white
+[kubernetes]: https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white
+[github]: https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white
+[mysql]: https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white
+[arch]: https://img.shields.io/badge/archlinux-%231793D1.svg?style=for-the-badge&logo=arch-linux&logoColor=white
+[git]: https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white
+[vscode]: https://img.shields.io/badge/Visual%20Studio%20Code-%23007ACC.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white
+
+<!----------------------------------{ contribution stats }--------------------------------->
+
+[snake]: https://github.com/rajput-hemant/rajput-hemant/blob/output/snake.svg
+[graph]: https://activity-graph.herokuapp.com/graph?username=rajput-hemant&theme=react-dark&hide_border=false&area=true
+
+<!--
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" width="42" alt="javascript logo"  />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" height="30" width="42" alt="typescript logo"  />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="30" width="42" alt="react logo"  />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="30" width="42" alt="html5 logo"  />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="30" width="42" alt="css3 logo"  />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" height="30" width="42" alt="python logo"  />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" height="30" width="42" alt="azure logo"  />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" height="30" width="42" alt="bash logo"  />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="30" width="42" alt="cplusplus logo"  />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" height="30" width="42" alt="dart logo"  />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="30" width="42" alt="docker logo"  />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" height="30" width="42" alt="firebase logo"  />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" height="30" width="42" alt="flutter logo"  />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="30" width="42" alt="git logo"  />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="30" width="42" alt="github logo"  />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" height="30" width="42" alt="googlecloud logo"  />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="30" width="42" alt="linux logo"  />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg" height="30" width="42" alt="markdown logo"  />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" height="30" width="42" alt="php logo"  />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="30" width="42" alt="vscode logo"  />
+ -->
