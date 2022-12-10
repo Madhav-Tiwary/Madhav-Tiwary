@@ -1,9 +1,8 @@
 
-README.md
-<a href="https://www.linkedin.com/feed/" target="_blank">
+<a href="https://www.facebook.com/" target="_blank">
   <a href="https://www.youtube.com/@letslearn75" target="_blank">
   <a href="https://www.instagram.com/" target="_blank">
-  <a href="https://www.facebook.com/" target="_blank">
+  <a href="https://www.linkedin.com/feed/" target="_blank">
   <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="50" height="38" alt="linkedin logo"/>
 </a>
 <a href="https://twitter.com/" target="_blank">
