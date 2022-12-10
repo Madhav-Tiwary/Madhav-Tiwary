@@ -1,21 +1,16 @@
 
-<!--   ---------------->>>>>>>>>>   -->
+
   <a href="https://www.linkedin.com/feed/" target="_blank">
   <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="50" height="38" alt="linkedin logo"/></a>
-    
-<!-- ---------------->>>>>>>>>> -->
-<a href="https://github.com/" target="_blank">
-<img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/github/default.svg" width="50" height="38" alt="github logo"/>
-</a>
-<!-- ---------------->>>>>>>>>> -->
+
 <a href="https://twitter.com/" target="_blank">
 <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/twitter/default.svg" width="50" height="38" alt="twitter logo"/>
 </a>
-<!--   ---------------->>>>>>>>>> -->
+
  <a href="https://youtube.com/" target="_blank">
   <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/youtube/default.svg" width="50" height="38" alt="YouTube logo"/>
 </a>
-<!--   ---------------->>>>>>>>>> -->
+
  <a href="https://instagram.com/" target="_blank">
   <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/instagram/default.svg" width="50" height="38" alt="instagram logo"/>
 </a>
