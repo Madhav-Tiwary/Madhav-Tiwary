@@ -1,14 +1,17 @@
 
 <a href="https://www.facebook.com/" target="_blank">
   <a href="https://www.youtube.com/@letslearn75" target="_blank">
-  <a href="https://www.instagram.com/" target="_blank">
+  <a href=https://github.com/Madhav-Tiwary target="_blank">
   <a href="https://www.linkedin.com/feed/" target="_blank">
-  <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="50" height="38" alt="linkedin logo"/>
-</a>
+  <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="50" height="38" alt="linkedin logo"/></a>
+    
 <a href="https://twitter.com/" target="_blank">
   <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/twitter/default.svg" width="50" height="38" alt="twitter logo"/>
 </a>
-<img align="right" src="https://komarev.com/ghpvc/?username=rajput-hemant&label=Profile+Views&style=plastic" alt="rajput-hemant" />
+ <a href="https://youtube.com/" target="_blank">
+  <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/youtube/default.svg" width="50" height="38" alt="YouTube logo"/>
+</a>
+<img align="right" src="https://komarev.com/ghpvc/?username=Madhav-Tiwary&label=Profile+Views&style=plastic" alt="Madhav-Tiwary" />
 
 <br>
 
@@ -16,7 +19,7 @@
 > neofetch
 ```
 
-<img align="left" src="https://telegra.ph/file/475b1b979f9c603fec65f.png" alt="rajput-hemant" width="390"/>
+<img align="left" src="https://telegra.ph/file/475b1b979f9c603fec65f.png" alt="Madhav-Tiwary" width="390"/>
 
 ```csharp
             
@@ -57,10 +60,10 @@
 ## 💻 Tech Stack:
 
  
-![][git] ![][github] ![][vscode] <br>
+![][github] ![][vscode] <br>
 ![][c] ![][c++] ![][dart] ![][java] ![][python] ![][php] <br>
 ![][aws] ![][azure]  <br>
-![][flutter] ![][Html] ![][Css]  ![][javascript ![][mysql]
+![][flutter] ![][Html] ![][Css]  ![][java script ![][mysql]
 
 ## 📊 GitHub Stats:
 
