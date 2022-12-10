@@ -56,10 +56,11 @@
 
 ## 💻 Tech Stack:
 
+ 
 ![][git] ![][github] ![][vscode] <br>
 ![][c] ![][c++] ![][dart] ![][java] ![][python] ![][php] <br>
 ![][aws] ![][azure]  <br>
-![][flutter] ![][mysql]
+![][flutter] ![][Html] ![][Css]  ![][javascript ![][mysql]
 
 ## 📊 GitHub Stats:
 
