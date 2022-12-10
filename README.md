@@ -8,6 +8,13 @@
 <a href="https://twitter.com/" target="_blank">
   <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/twitter/default.svg" width="50" height="38" alt="twitter logo"/>
 </a>
+    <a href="https://github.com/" target="_blank">
+  <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/twitter/default.svg" width="50" height="38" alt="github logo"/>
+</a>
+     <a href="https://facebook.com/" target="_blank">
+  <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/facebok/default.svg" width="50" height="38" alt="facebook logo"/>
+</a>
+    
  <a href="https://youtube.com/" target="_blank">
   <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/youtube/default.svg" width="50" height="38" alt="YouTube logo"/>
 </a>
@@ -63,7 +70,7 @@
 ![][github] ![][vscode] <br>
 ![][c] ![][c++] ![][dart] ![][java] ![][python] ![][php] <br>
 ![][aws] ![][azure]  <br>
-![][flutter] ![][Html] ![][Css]  ![][java script ![][mysql]
+![][flutter] ![][Html] ![][Css]  ![][java script] ![][mysql]
 
 ## 📊 GitHub Stats:
 
