@@ -14,7 +14,8 @@
  <a href="https://instagram.com/" target="_blank">
   <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/instagram/default.svg" width="50" height="38" alt="instagram logo"/>
 </a>
-Welcome to My Profile --> Now that You've Come Here, Don't Go Without Following Me. 
+        ┌──────────────--->---> Welcome to My Profile <---<---──────────────┐
+ ┌──────────────Now that You've Come Here, Don't Go Without Following Me──────────────┐
 <img align="right" src="https://komarev.com/ghpvc/?username=Madhav-Tiwary&label=Profile+Views&style=plastic" alt="Madhav-Tiwary" />
 
 <br>
